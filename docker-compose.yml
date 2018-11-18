@@ -21,6 +21,8 @@ services:
     depends_on:
     - mongo
     - redis
+    environment:
+      - REDIS_URL=redis://redis
   web:
      build: ./geekurl
      ports:

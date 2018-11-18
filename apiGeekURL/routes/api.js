@@ -3,9 +3,9 @@ var router = express.Router();
 var mongo = require('mongodb').MongoClient;
 var objectId = require('mongodb').ObjectID;
 var assert = require('assert');
-var url = 'mongodb://mongo:27017/';
+var url = 'mongodb://ec2-54-149-63-97.us-west-2.compute.amazonaws.com:27017/';
 const redis = require('redis');
-var redis_client = redis.createClient({ "host": 'redis', "port": "6379" });
+var redis_client = redis.createClient('redis://ec2-54-149-63-97.us-west-2.compute.amazonaws.com:6379/');
 var db;
 
 router.get('/V1/Cell/', function(req, res, next) {

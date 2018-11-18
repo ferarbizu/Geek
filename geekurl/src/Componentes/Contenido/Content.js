@@ -25,7 +25,7 @@ class Content extends Component {
     }
   async componentDidMount(){
     try {
-      const response = await fetch('http://localhost:3001/api/V1/Cell/');
+      const response = await fetch('http://ec2-35-163-39-208.us-west-2.compute.amazonaws.com:3001/api/V1/Cell/');
       if (!response.ok) {
         throw Error(response.statusText);
       }
@@ -50,7 +50,7 @@ class Content extends Component {
   
     async saveModalDetails(item) {
       try {
-        const response = await fetch('http://localhost:3001/api/V1/Cell/', {
+        const response = await fetch('http://ec2-35-163-39-208.us-west-2.compute.amazonaws.com:3001/api/V1/Cell/', {
           method: 'PUT',
           headers: {
             'Accept': 'application/json',
@@ -70,7 +70,7 @@ class Content extends Component {
 
     async saveModalAdd(item) {
         try {
-          const response = await fetch('http://localhost:3001/api/V1/Cell/', {
+          const response = await fetch('http://ec2-35-163-39-208.us-west-2.compute.amazonaws.com:3001/api/V1/Cell/', {
           method: 'POST',
           headers: {
             'Accept': 'application/json',
@@ -89,7 +89,7 @@ class Content extends Component {
     }
   
     async deleteItem(index) {
-      const response = await fetch('http://localhost:3001/api/V1/Cell/', {
+      const response = await fetch('http://ec2-35-163-39-208.us-west-2.compute.amazonaws.com:3001/api/V1/Cell/', {
         method: 'DELETE',
         headers: {
           'Accept': 'application/json',
