@@ -21,11 +21,17 @@ Dicho laboratorio se encuentra [aquí](https://github.com/ferarbizu/Labdoratorio
 ## Laboratorio 5
 Se creo un proyecto con ExpressJs, el cual consistia en implementar una simulación de como funciona una aplicación RESTFul con sus 4 verbos http `POST, GET, PUT y DELETE`, estos se ejecutaban con la ruta `/api/V1/Cell/`, los datos se econtraban almacenados en una valiable local.
 
+Dicho laboratorio se encuentra [aquí](https://github.com/ferarbizu/Laboratorio_5/tree/Lab5).
+
 ## Laboratorio 6
 Se tenia que elegir un cliente para base de datos, en este caso de eligio **MongoDB** el cual se realizo de forma local, donde el RESTFul que se debia de poder comunicar con el cliente, y modificar los metodos para realizar la acciones en el cliente.
 
+Dicho laboratorio se encuentra [aquí](https://github.com/ferarbizu/Laboratorio_5/tree/Lab6).
+
 ## Laboratorio 7
 En este laboratorio de unio el Back-end con Front-end por medio de la dependencia `fetch`, luego de impemeto de un servio de **Redis** donde los datos de debia que pedir alli antes que del cliente de base de datos, esto para acceder los datos de una forma más rapida debido a que su funcionalidad es similar a la memoria RAM.
+
+Dicho laboratorio se encuentra [Back-end](https://github.com/ferarbizu/Laboratorio_5/tree/Lab7).
 
 ## Laboratorio 8
 Se creo un DockerFile para el Back-end y para el Front-end, luego se creo un `docker-compose.yml` para poder comunicar  las dependencia de Front-end, Back-end, Mongo y Redis, y asi mapear la aplicación al puerto `:8000`.
